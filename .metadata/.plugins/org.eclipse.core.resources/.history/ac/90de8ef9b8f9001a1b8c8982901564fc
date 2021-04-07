@@ -1,0 +1,13 @@
+
+public class Plaindrom {
+
+	public static void main(String[] args) {
+		String str="MAM";
+		StringBuilder st=new StringBuilder(str);
+		
+		if(st.reverse().toString().equals(str))
+	
+		System.out.println("Palindrom");
+	}
+
+}

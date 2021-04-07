@@ -1,0 +1,33 @@
+
+public class ThisCAllingStatement {
+	
+	public ThisCAllingStatement()
+	{
+		
+		
+		
+	}
+	public ThisCAllingStatement(int a)
+	{
+		
+		
+		
+	}
+	public ThisCAllingStatement(int a,int b)
+	{
+		
+		
+		
+	}
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+		
+		ThisCAllingStatement ts=new ThisCAllingStatement();
+		
+	}
+
+}

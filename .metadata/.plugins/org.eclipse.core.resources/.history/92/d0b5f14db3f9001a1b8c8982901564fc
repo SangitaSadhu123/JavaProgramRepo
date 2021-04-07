@@ -1,0 +1,13 @@
+import java.util.Arrays;
+
+public class ReverseOfString {
+
+	public static void main(String[] args) {
+		
+		String str="My name is sangita";
+		String[] splitString=str.split(" ");
+		
+		List<String> words=Arrays.asList(splitString);
+	}
+
+}

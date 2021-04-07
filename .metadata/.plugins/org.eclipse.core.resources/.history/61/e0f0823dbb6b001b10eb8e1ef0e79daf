@@ -1,0 +1,19 @@
+
+public class Demo {
+
+	
+	
+	int a=2; 
+	 static int b;
+	 public static void car(String[] args) { 
+
+		}
+	public static void main(String[] args) {
+
+    b=2;
+     Demo.b;
+
+
+	}
+
+}

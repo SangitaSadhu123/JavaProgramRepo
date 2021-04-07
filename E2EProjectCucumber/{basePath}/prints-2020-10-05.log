@@ -1,0 +1,6 @@
+20:17:17.389 [TestNG-tests-4] INFO  resources.Base - Login button clicked successfully
+20:17:19.302 [TestNG-tests-4] INFO  resources.Base - Driver closed successfully
+21:12:33.678 [TestNG-tests-4] INFO  resources.Base - Driver is initialized successfully
+21:12:45.258 [TestNG-tests-2] INFO  resources.Base - Navigation Bar clicked successfully
+21:12:46.898 [TestNG-tests-4] INFO  resources.Base - Login button clicked successfully
+21:12:52.655 [TestNG-tests-4] INFO  resources.Base - Login button clicked successfully

@@ -1,0 +1,29 @@
+class Demo3
+{
+	private int a=2;
+
+	public int getter() {
+	
+		return this.a;
+	}
+	
+	public void setter(int a)
+	{
+		this.a=a;
+	}
+
+
+
+}
+
+
+
+public class Encapsulation {
+	
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

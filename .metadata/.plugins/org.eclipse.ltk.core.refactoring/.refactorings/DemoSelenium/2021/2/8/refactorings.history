@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;chromedriver_win32_v2.42.exe&apos; to &apos;Practice&apos;&#x0D;&#x0A;- Original project: &apos;DemoSelenium&apos;&#x0D;&#x0A;- Destination element: &apos;Practice&apos;&#x0D;&#x0A;- Original element: &apos;chromedriver_win32_v2.42.exe&apos;" description="Copy file" destination="=Practice" element1="chromedriver_win32_v2.42.exe" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1613583258238" units="0" version="1.0"/>
+</session>

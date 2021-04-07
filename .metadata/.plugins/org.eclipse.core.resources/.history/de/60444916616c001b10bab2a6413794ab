@@ -1,0 +1,12 @@
+
+public class FinalKeyword {
+	
+	final int b=12;
+
+	public static void main(String[] args) {
+		
+		final int a=16;
+		System.out.println(b);
+	}
+
+}

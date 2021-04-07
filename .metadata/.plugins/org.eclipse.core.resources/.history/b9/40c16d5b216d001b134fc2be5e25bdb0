@@ -1,0 +1,14 @@
+interface ABC
+{
+	void set();
+	void get();
+
+}
+public class Dustin {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

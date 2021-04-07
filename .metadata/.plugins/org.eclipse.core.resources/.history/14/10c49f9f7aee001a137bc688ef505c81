@@ -1,0 +1,26 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class chromebrowser {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sangitasadhu\\Documents\\Automation\\Practice\\chromedriver.exe");
+	
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.google.com/");
+		driver.get("https://sitiam04.dcas.dc.gov:4446/Curam/");
+		driver.findElement(By.xpath("//button[contains(text(),'Advanced')]")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'Proceed to sitiam04.dcas.dc.gov (unsafe)')]")).click();;
+		driver.findElement(By.xpath("//label[contains(text(),'Username')]//following-sibling::input")).sendKeys("Samidha.goyal");
+		driver.findElement(By.xpath("//label[contains(text(),'Password')]//following-sibling::input")).sendKeys("Welcome@90");
+		driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+		
+		//driver.close();
+		
+
+	}
+
+}

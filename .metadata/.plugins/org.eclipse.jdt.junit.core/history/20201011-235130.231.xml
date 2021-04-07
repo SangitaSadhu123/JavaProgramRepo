@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (1)" project="E2EProjectCucumber" tests="5" started="5" failures="2" errors="0" ignored="0">
+  <testsuite name="cucumberOption.TestRunner" time="7.07">
+    <testsuite name="Feature: Login into Application" time="7.07">
+      <testsuite name="Scenario: Negative test validation login" time="7.07" incomplete="true">
+        <failure>java.lang.AssertionError: expected [true] but found [false]&#13;
+	at org.testng.Assert.fail(Assert.java:99)&#13;
+	at org.testng.Assert.failNotEquals(Assert.java:1037)&#13;
+	at org.testng.Assert.assertTrue(Assert.java:45)&#13;
+	at org.testng.Assert.assertTrue(Assert.java:55)&#13;
+	at stepDefinations.StepDefination.verify_that_user_is_not_able_to_logged_in(StepDefination.java:54)&#13;
+	at ✽.Then Verify that user is not able to logged in(Login.feature:8)&#13;
+&#13;
+</failure>
+        <testcase name="Given Initialize the browser with chrome" classname="Scenario: Negative test validation login" time="4.653"/>
+        <testcase name="And Navigate to &quot;http://qaclickacademy.com&quot; site" classname="Scenario: Negative test validation login" time="1.643"/>
+        <testcase name="And Click on Login link in home page to land on Secure sign in page" classname="Scenario: Negative test validation login" time="0.66"/>
+        <testcase name="When User enters &quot;test91@gmail.com&quot; and &quot;123456&quot; and logs in" classname="Scenario: Negative test validation login" time="0.109"/>
+        <testcase name="Then Verify that user is not able to logged in" classname="Scenario: Negative test validation login" time="0.005">
+          <failure>java.lang.AssertionError: expected [true] but found [false]&#13;
+	at org.testng.Assert.fail(Assert.java:99)&#13;
+	at org.testng.Assert.failNotEquals(Assert.java:1037)&#13;
+	at org.testng.Assert.assertTrue(Assert.java:45)&#13;
+	at org.testng.Assert.assertTrue(Assert.java:55)&#13;
+	at stepDefinations.StepDefination.verify_that_user_is_not_able_to_logged_in(StepDefination.java:54)&#13;
+	at ✽.Then Verify that user is not able to logged in(Login.feature:8)&#13;
+&#13;
+</failure>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,12 @@
+import java.io.FileInputStream;
+import java.util.Properties;
+
+public class GlobalEnvVariable {
+
+	public static void main(String[] args) {
+		Properties prop=new Properties();
+		FileInputStream fis=new FileInputStream("");
+
+	}
+
+}

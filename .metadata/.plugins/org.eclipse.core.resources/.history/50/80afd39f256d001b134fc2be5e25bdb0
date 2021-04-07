@@ -1,0 +1,30 @@
+class Demo3
+{
+	private void test()
+	{
+		System.out.println("test method");
+	}
+
+	public void getter() {
+		test();
+		
+	}
+	
+	
+
+}
+
+
+
+public class Encapsulation {
+	
+
+	public static void main(String[] args) {
+		
+		
+		Demo3 d3=new Demo3();
+		
+		d3.getter();
+
+}
+}

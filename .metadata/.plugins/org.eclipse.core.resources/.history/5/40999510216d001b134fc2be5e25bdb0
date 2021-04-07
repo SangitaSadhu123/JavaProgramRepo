@@ -1,0 +1,6 @@
+
+public interface Abc {
+	void get();
+	void set();
+
+}

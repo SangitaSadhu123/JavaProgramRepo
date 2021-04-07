@@ -1,0 +1,42 @@
+
+public class MethodOverloading {
+
+	int a=2; // global
+	
+	public static void test()
+	{
+		int i=3;
+		System.out.println("test");
+		System.out.println(a);
+	}
+	
+	public static void test(int a,int b)
+	{
+		
+		System.out.println("test1");
+	}
+	public static void test(boolean b)
+	{
+		System.out.println("test2");
+	}
+	public void test()
+	
+	{
+		System.out.println(i);
+		System.out.println("test3");
+	}
+	
+	
+public static void main(String[] args) {
+	MethodOverloading.test();
+	MethodOverloading.test(2, 3);
+	MethodOverloading mo=new MethodOverloading();
+	mo.test('c');
+	MethodOverloading.test(true);
+
+	}
+
+
+}
+
+

@@ -1,0 +1,23 @@
+
+public class Demo {
+
+	
+	
+	int a=2; 
+	 static int b=3;
+	 public static void car() { 
+System.out.println("abc");
+		}
+	 
+	 
+	 
+	public static void main(String[] args) {
+
+    
+     System.out.println(Demo.b);
+    System.out.println(Demo.car());
+
+
+	}
+
+}

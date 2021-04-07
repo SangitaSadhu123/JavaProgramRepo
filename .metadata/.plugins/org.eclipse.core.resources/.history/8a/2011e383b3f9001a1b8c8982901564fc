@@ -1,0 +1,16 @@
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class ReverseOfString {
+
+	public static void main(String[] args) {
+		
+		String str="My name is sangita";
+		String[] splitString=str.split(" ");
+		
+		List words=Arrays.asList(splitString);
+		Collections.reverse(words);
+	}
+
+}

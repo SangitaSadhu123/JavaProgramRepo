@@ -1,0 +1,31 @@
+class Demo3
+{
+	private void test()
+	{
+		System.out.println();
+	}
+
+	public void getter() {
+	
+		return this.a; 
+	}
+	
+	
+
+}
+
+
+
+public class Encapsulation {
+	
+
+	public static void main(String[] args) {
+		
+		
+		Demo3 d3=new Demo3();
+		d3.setter(5);
+		System.out.println(d3.getter());
+		
+	}
+
+}

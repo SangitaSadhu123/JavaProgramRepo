@@ -1,0 +1,44 @@
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class chromebrowser {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sangitasadhu\\Documents\\Automation\\Practice\\chromedriver.exe");
+	
+		WebDriver driver=new ChromeDriver();
+		
+
+		driver.get("https://google.com");
+
+		driver.manage().window().maximize();
+		//driver.get("https://www.google.com/");
+		driver.get("https://sitiam04.dcas.dc.gov:4446/Curam/");
+		System.out.println(driver.findElement(By.xpath("//button[contains(text(),'Advanced')]")).getText());
+		driver.findElement(By.xpath("//button[contains(text(),'Advanced')]")).click();
+		
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		
+		System.out.println(driver.findElement(By.xpath("//div[@id='details']//child::p[contains(text(),'This server could not prove that it is ')]")).getText());
+		System.out.println(driver.findElement(By.xpath("//div[@id='details']//child::a[contains(text(),'Proceed to sitiam01.dcas.dc.gov (unsafe)')]")).getText());
+		
+		/*WebElement element=driver.findElement(By.xpath("//div[@id='details']//child::a[contains(text(),'Proceed to sitiam01.dcas.dc.gov (unsafe)')]"));
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", element);*/
+		driver.findElement(By.xpath("//label[contains(text(),'Username')]//following-sibling::input")).sendKeys("nidhi.dhawan");
+		driver.findElement(By.xpath("//label[contains(text(),'Password')]//following-sibling::input")).sendKeys("Test@321!");
+		driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+		
+		//driver.close();
+		
+
+	}
+
+}

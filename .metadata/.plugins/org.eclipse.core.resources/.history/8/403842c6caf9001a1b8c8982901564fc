@@ -1,0 +1,14 @@
+import java.util.HashSet;
+
+public class RemoveDuplicatFromString {
+
+	public static void main(String[] args) {
+		String str="Java Session Java";
+		String[] splitWord=str.split(" ");
+		
+		HashSet<String> set=new HashSet<splitWord>(splitWord);
+		
+
+	}
+
+}

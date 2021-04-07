@@ -1,0 +1,23 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapNullKey {
+
+	public static void main(String[] args) {
+		Map<String,String>map = new HashMap<>();
+	      map.put("Football", "A");
+	      map.put("Squash", "B");
+	      map.put("Cricket", "C");
+	      map.put("Hockey", "D");
+	      map.put("Rugby", "E");
+	      map.put("Golf", "F");
+	      map.put("Archery", "G");
+	      System.out.println("Size of HashMap = " + map.size());
+	      map.put(null, "H"); // null is key
+	      map.put("Golf", "Z");
+	      System.out.println("Updated Size of HashMap = " + map.size());
+	      System.out.println("For null = " + map.get(null));
+	      System.out.println("For null = " + map.get("Golf"));
+	}
+
+}

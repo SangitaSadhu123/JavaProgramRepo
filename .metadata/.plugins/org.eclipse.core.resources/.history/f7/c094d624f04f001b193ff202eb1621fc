@@ -1,0 +1,25 @@
+
+public class PrimeNumber {
+
+	public static void main(String[] args) {
+		int[] array= {1,2,3,4,5};
+		
+		
+		
+		for(int i=0; i<array.length; i++){
+	        boolean isPrime = true;
+
+	//Using for loop and if condition, prime numbers are identified from all the numbers that are entered in the array.
+	        for (int j=2; j<i; j++){
+
+	            if(i%j==0){
+	                isPrime = false;
+	                break;
+	            }
+	        }
+
+	}
+	}
+}
+
+

@@ -1,0 +1,18 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class DropDownList {
+
+public static void main(String[] args) {
+		
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\sangitasadhu\\Documents\\Automation\\Practice\\chromedriver.exe");
+	
+	WebDriver driver=new ChromeDriver();
+	driver.get("https://google.com");
+	driver.manage().window().maximize();
+	driver.get("https://www.spicejet.com/");
+	driver.findElement(By.xpath("//label[contains(text(),'PASSENGERS')]/following-sibling::div")).click();
+	}
+
+}

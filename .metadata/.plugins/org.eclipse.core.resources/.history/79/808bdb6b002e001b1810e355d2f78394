@@ -1,0 +1,28 @@
+
+public class Plaindrom {
+
+	public static void main(String[] args) {
+		String str="Mam";
+		
+		int flag=0;
+		/*StringBuilder st=new StringBuilder(str);
+	if(st.reverse().toString().equalsIgnoreCase(str))
+	
+		System.out.println("Palindrom");
+	}*/
+		for(int i=0,j=str.length()-1;j>i;i++,j--)
+		{
+			if(str.charAt(i)!=str.charAt(j))
+			{
+				flag=1;
+				break;
+			}
+		}
+		if(flag==0)
+			System.out.println("palindrom");
+		
+		else
+			System.out.println("non-palindrom");
+		}
+
+}

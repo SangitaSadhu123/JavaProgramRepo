@@ -1,0 +1,16 @@
+import java.util.stream.Stream;
+import java.util.*;
+
+public class JavaStream {
+
+	public static void main(String[] args) {
+		//Stream.of(3,4,3,1,1,2,5).distinct().sorted().forEach(s->System.out.println(s)); // get unique or duplicate result 
+		Stream.of(3,4,3,1,1,2,5).distinct().sorted(Comparator.reverseOrder()).forEach(s->System.out.println(s)); //get unique or duplicate result in desending order
+	
+	
+	
+	
+	
+	}
+
+}

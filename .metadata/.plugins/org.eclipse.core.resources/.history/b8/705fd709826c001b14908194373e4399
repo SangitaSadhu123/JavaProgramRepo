@@ -1,0 +1,30 @@
+ class Father 
+{
+public static  void swimmer()
+	{
+		System.out.println("good swimmer");
+	}
+	public static  void runner()
+	{
+		System.out.println("good runner");
+	}
+	
+}
+class Son extends Father {
+	
+	public static  void singer()
+	{
+		System.out.println("good singer");
+	}
+	
+}
+	
+public class DemoInheritance
+{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

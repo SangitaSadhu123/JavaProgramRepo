@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="55" started-at="2021-03-15T21:15:56 IST" finished-at="2021-03-15T21:15:57 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="55" started-at="2021-03-15T21:15:56 IST" finished-at="2021-03-15T21:15:57 IST">
+      <class name="qaclickacademy.Mavenjava.SleniumTest">
+        <test-method status="PASS" signature="logout()[pri:0, instance:qaclickacademy.Mavenjava.SleniumTest@2b2948e2]" name="logout" duration-ms="7" started-at="2021-03-15T21:15:57 IST" finished-at="2021-03-15T21:15:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- qaclickacademy.Mavenjava.SleniumTest -->
+      <class name="qaclickacademy.Mavenjava.RestAPITTest">
+        <test-method status="PASS" signature="loginRestAPI()[pri:0, instance:qaclickacademy.Mavenjava.RestAPITTest@6ddf90b0]" name="loginRestAPI" duration-ms="0" started-at="2021-03-15T21:15:57 IST" finished-at="2021-03-15T21:15:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginRestAPI -->
+      </class> <!-- qaclickacademy.Mavenjava.RestAPITTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

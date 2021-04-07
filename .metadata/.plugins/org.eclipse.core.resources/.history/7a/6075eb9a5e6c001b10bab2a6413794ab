@@ -1,0 +1,30 @@
+
+public class MethodOverloading {
+
+	
+	
+	public static void test()
+	{
+		System.out.println("test");
+	}
+	
+	public static void test(int a,int b)
+	{
+		System.out.println("test1");
+	}
+	public static void test(boolean b)
+	{
+		System.out.println("test2");
+	}
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,13 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Properties;
+
+public class GlobalEnvVariable {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		Properties prop=new Properties();C:\Users\sangitasadhu\Documents\Automation\Practice\config.properties
+		FileInputStream fis=new FileInputStream("");
+
+	}
+
+}

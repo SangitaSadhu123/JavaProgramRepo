@@ -1,0 +1,44 @@
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
+public class BrokenLink {
+
+	public static void main(String[] args) throws MalformedURLException, IOException {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\sangitasadhu\\Documents\\Automation\\Practice\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		List<WebElement>links=driver.findElements(By.xpath("//li[@class='gf-li']//a"));
+		
+		for(WebElement link:links)
+		{
+			String url=link.getAttribute("href"); // getAttribute will return url(value) of href attribute
+			HttpURLConnection conn=(HttpURLConnection) new URL(url).openConnection(); // it will call url and get the response in conn obj -> conn obj will open connection
+			conn.setRequestMethod("HEAD"); // sending request as "HEAD"
+			conn.connect(); // make a connection
+			int respCode=conn.getResponseCode(); // get the response code or status
+			System.out.println(respCode);
+			if(respCode>400)
+			{
+				System.out.println("broken link" +link.getText()+ " Response code " +respCode);
+				Assert.assertTrue(false);
+				
+				
+			}
+		}
+
+	}
+
+}

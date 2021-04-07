@@ -1,0 +1,27 @@
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for frame to be available: By.xpath: //iframe[@title='Content Panel - Evidence'] (tried for 10 second(s) with 500 MILLISECONDS interval)
+
+
+
+1. where XML file present so that Test case class can be mapped
+
+VerifyResult:
+public void verify_EmergencyEvidence_IS_Level1(ExtentTest test)throws InterruptedException, IOException {
+	IncomeSupportCase IC = IncomeSupportCase.getInstance();
+	switchToDefault();
+	Wait.elementVisibleWait(activeEvidenceIC);
+	Link.selectLink(activeEvidenceIC);
+	switchToDefault();
+	switchToFrame(activeEvidenceFrame);
+	String status1=TextBox.getTextBox(martialStatus1);
+	if (status1.equals("Has a marital status of Single"))
+	{
+		test.pass("Successfully able to see Updated Martial Status Details in IS page");
+		General_Utils.captureScreen();
+		
+	}else {
+		test.fail("Not able to see Updated Martial Status Details in IS page");
+		General_Utils.captureScreen();
+		throw new RuntimeException();
+	}
+	
+}

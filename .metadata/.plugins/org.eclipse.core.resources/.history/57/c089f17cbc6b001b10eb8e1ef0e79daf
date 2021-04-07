@@ -1,0 +1,25 @@
+
+public class Demo 
+
+{
+	
+int a=2; // non static variable
+static int b=3;  //  static variable
+
+	 public static void car()  //  static method
+	 { 
+System.out.println("abc");
+		}
+	 
+	 
+	 
+public static void main(String[] args) {
+
+	
+  System.out.println(Demo.b); // 3
+  Demo.car(); 
+
+
+	}
+
+}

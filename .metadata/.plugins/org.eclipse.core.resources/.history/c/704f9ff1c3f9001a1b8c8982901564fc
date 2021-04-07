@@ -1,0 +1,31 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class DuplicateStringCount {
+
+	public static void main(String[] args) {
+		
+		String str="Java is java  session session programing language java" ;
+		String[] splitWord=str.split(" ");
+		//key,value
+		HashMap<String,Integer> hm=new HashMap();
+		
+		for(String duplicate:splitWord)
+		{
+			Integer j=hm.get(duplicate); 
+			
+			hm.put(duplicate,(j == null) ? 1: j+1);
+			
+		}
+		System.out.println(hm);
+		System.out.println(hm.entrySet());
+		for(Map.Entry<String,Integer> map:hm.entrySet()) {
+			System.out.println(map.getKey()+" "+map.getValue());
+	}
+		
+		
+		
+		
+	}
+
+}

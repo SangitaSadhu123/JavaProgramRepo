@@ -1,0 +1,13 @@
+import java.util.Arrays;
+import java.util.HashSet;
+
+public class RemoveDuplicateChar {
+
+	public static void main(String[] args) {
+		String str="Sangita";
+		char[] ch=str.toCharArray();
+		HashSet<Character> set=new HashSet<Character>(Arrays.asList(ch));
+
+	}
+
+}

@@ -1,0 +1,27 @@
+interface ABC
+{
+	void set();
+	void get();
+
+}
+public class Dustin implements ABC
+
+{
+
+	void get()
+	{
+		System.out.println("get method");
+		
+		
+	}
+	
+	
+	
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

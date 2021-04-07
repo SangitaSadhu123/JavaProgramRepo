@@ -1,0 +1,6 @@
+00:13:51.752 [main] INFO  Resources.Base - Driver is initialized successfully
+00:13:55.441 [main] INFO  Resources.Base -  User is able to click on SignIn button successfully
+00:13:59.108 [main] INFO  Resources.Base -  User is able SignIn  successfully
+00:14:07.400 [main] INFO  Resources.Base -  Product selected successfully
+00:14:11.787 [main] INFO  Resources.Base -  Product added to cart successfully
+00:14:14.170 [main] INFO  Resources.Base - Driver closed successfully

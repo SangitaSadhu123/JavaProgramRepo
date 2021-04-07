@@ -1,0 +1,21 @@
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CheckBobHandle {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sangitasadhu\\Documents\\Automation\\Practice\\chromedriver.exe");
+		
+		WebDriver driver=new ChromeDriver();
+		 //driver.get("https://google.com");
+		 driver.manage().window().maximize();
+		 driver.get("https://www.spicejet.com/");
+		 List<WebElement> checkboxes=driver.findElements(By.xpath("//input[@type='checkbox']"));
+		 System.out.println(checkboxes.size());
+		 
+	}
+
+}

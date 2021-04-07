@@ -1,0 +1,42 @@
+ class Father 
+{
+public static void swimmer()
+	{
+		System.out.println("good swimmer");
+	}
+	public void runner()
+	{
+		System.out.println("good runner");
+	}
+	
+}
+class Son extends Father {
+	
+	public static void singer()
+	{
+		System.out.println("good singer");
+	}
+	
+}
+class GrandSon extends Father {
+	
+	public static void Painter()
+	{
+		System.out.println("good Painter");
+	}
+	
+}
+	
+public class DemoInheritance
+{
+
+	public static void main(String[] args) {
+	
+		Father.swimmer();
+		Son.singer();
+		Son.swimmer();
+		
+		
+	}
+
+}

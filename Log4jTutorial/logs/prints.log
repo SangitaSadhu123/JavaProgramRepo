@@ -1,0 +1,9 @@
+02:35:04.334 [main] FATAL beta.Demo1 - Page is missing
+02:36:35.753 [main] DEBUG alpha.Demo - Button clicked 
+02:36:35.757 [main] INFO  alpha.Demo - Bullon loged in successfully
+02:36:35.757 [main] ERROR alpha.Demo - Button is not displayed
+02:36:35.758 [main] FATAL alpha.Demo - button is missing
+02:37:19.891 [main] DEBUG beta.Demo1 - Page clicked 
+02:37:19.895 [main] INFO  beta.Demo1 - Page opened successfully
+02:37:19.895 [main] ERROR beta.Demo1 - Page is not displayed
+02:37:19.895 [main] FATAL beta.Demo1 - Page is missing

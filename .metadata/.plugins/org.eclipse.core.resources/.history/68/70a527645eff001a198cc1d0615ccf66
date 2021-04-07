@@ -1,0 +1,10 @@
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+public class HTTPConnection {
+
+	public static void main(String[] args) {
+		DesiredCapabilities ch=DesiredCapabilities.chrome();
+
+	}
+
+}

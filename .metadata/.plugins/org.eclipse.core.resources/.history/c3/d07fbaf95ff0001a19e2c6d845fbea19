@@ -1,0 +1,41 @@
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class DropDownList {
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\sangitasadhu\\Documents\\Automation\\Practice\\chromedriver.exe");
+	
+	WebDriver driver=new ChromeDriver();
+	
+
+	driver.get("https://google.com");
+
+	driver.manage().window().maximize();
+	WebElement element=driver.findElement(By.id("ctl00_mainContent_ddl_originStation1"));
+	public static void dropDownSlectByText(WebElement element,String visibleText)
+	{
+		
+		
+	}
+
+public static void main(String[] args) {
+		
+	
+	//driver.findElement(By.xpath("//label[contains(text(),'PASSENGERS')]/following-sibling::div[contains(text(),'1 Adult')]")).click();
+	driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+	
+	
+	
+	System.out.println("aaa");
+	Select s=new Select(element);
+	//s.selectByVisibleText("Ahmedabad (AMD)");
+	System.out.println("bb");
+	s.selectByIndex(4);
+	System.out.println("ccc");
+	}
+
+}

@@ -1,0 +1,11 @@
+
+public class DuplicateStringCount {
+
+	public static void main(String[] args) {
+		
+		String str="Java is java session session programing language" ;
+		String[] splitWord=str.split(" ");
+		
+	}
+
+}

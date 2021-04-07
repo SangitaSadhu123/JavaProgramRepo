@@ -1,0 +1,26 @@
+ class Father 
+{
+public  void swimmer()
+	{
+		System.out.println("good swimmer");
+	}
+
+}
+
+	
+public class DemoInheritance
+{
+	public DemoInheritance()
+	{
+		
+		System.out.println("DemoInheritance is executing ");
+	}
+	public static void main(String[] args) {
+	
+		Father.swimmer();
+		
+		
+		
+	}
+
+}

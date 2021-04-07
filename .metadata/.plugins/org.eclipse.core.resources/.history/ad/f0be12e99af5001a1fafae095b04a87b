@@ -1,0 +1,48 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class AddToCartMultipleProduct {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\sangitasadhu\\Documents\\Automation\\Practice\\chromedriver.exe");
+		
+		String[] itemsNeeded= {"Cucumber","Brocolli","Tomato"}; // Add all the products which needs to be added
+		
+		WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
+		List<WebElement> products = driver.findElements(By.cssSelector("h4.product-name"));
+		
+		
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		for (int i = 0; i < products.size(); i++) {
+	//Brocolli - 1 Kg o/p for products.get(i).getText() but passing products as "Brocolli" so have to split
+			//"Brocolli - 1 Kg"  string but still there is space after splitting so have to trim the space
+			
+			String[] name=products.get(i).getText().split("-");
+			String formatedName=name[0].trim();  // OutPut: Brocolli
+
+					
+		List<String> itemsNeededList=Arrays.asList(itemsNeeded); // converting Array to ArrayList ts are moving to Array List
+			
+			
+			if (itemsNeededList.contains(formatedName)) // check whether the product(formatedName) is available in the ArrayList(itemsNeededList) or not 
+			{
+				driver.findElements(By.xpath("//button[contains(text(),'ADD TO CART')]")).get(i).click(); // click add to cart
+				
+
+			}
+
+		}
+
+	}
+
+}

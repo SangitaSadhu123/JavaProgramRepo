@@ -1,0 +1,54 @@
+import java.util.List;
+import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class AutoSuggestedDropDown2nd {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sangitasadhu\\Documents\\Automation\\Practice\\chromedriver.exe");
+		
+		 WebDriver driver=new ChromeDriver();
+		 //driver.get("https://google.com");
+		 driver.manage().window().maximize();
+		 driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		 driver.findElement(By.xpath("//legend[contains(text(),'Suggession Class Example')]/following-sibling::*")).click();
+		 driver.findElement(By.xpath("//legend[contains(text(),'Suggession Class Example')]/following-sibling::*")).sendKeys("Ind");
+		 int i=1;
+		 while(i<3)
+		 {
+		 driver.findElement(By.xpath("//legend[contains(text(),'Suggession Class Example')]/following-sibling::*")).sendKeys(Keys.ARROW_DOWN);
+		 //driver.findElement(By.xpath("//legend[contains(text(),'Suggession Class Example')]/following-sibling::*")).sendKeys(Keys.ARROW_DOWN);
+		 }
+		 driver.findElement(By.xpath("//legend[contains(text(),'Suggession Class Example')]/following-sibling::*")).sendKeys(Keys.ENTER);
+		/* List<WebElement> options=driver.findElements(By.cssSelector("li[class='ui-menu-item'] a")); 
+		 for(WebElement option:options)
+		 {
+			 int i=1;
+			 if(i<)
+			 {
+				 option.sendKeys(Keys.DOWN);
+				 
+			 }
+			 option.sendKeys(Keys.ENTER);
+			 /*if(option.getText().equalsIgnoreCase("Indonesia"))
+			 {
+				option.sendKeys(Keys.DOWN);
+				option.sendKeys(Keys.DOWN);
+				option.sendKeys(Keys.DOWN);
+				 System.out.println("aa");
+				 break;
+			 }*/
+		 
+		}
+
+	}
+
+

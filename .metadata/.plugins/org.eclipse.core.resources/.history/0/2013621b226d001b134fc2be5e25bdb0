@@ -1,0 +1,35 @@
+interface ABC
+{
+	void set();
+	
+}
+interface XYZ
+{
+	void get();
+
+}
+public class Dustin implements ABC,XYZ
+
+{
+
+	public void get()
+	{
+		System.out.println("get method");
+		
+		
+	}
+	public void set()
+	{
+		System.out.println("set method");
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		Dustin d=new Dustin();
+		d.get();
+		d.set();
+
+	}
+
+}
